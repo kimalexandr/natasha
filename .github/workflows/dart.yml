@@ -1,0 +1,60 @@
+name: wordpress_app
+description: A new Flutter project for displaying WordPress posts with audio and images.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core dependencies
+  cupertino_icons: ^1.0.5
+
+  # HTTP client for fetching data from WordPress API
+  http: ^0.15.0
+
+  # For launching URLs (e.g., Telegram, YouTube)
+  url_launcher: ^6.1.5
+
+  # For playing audio files
+  audioplayers: ^4.0.0
+
+  # Optional: If you want to use provider for state management
+  # provider: ^6.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Lint rules for better code quality
+  flutter_lints: ^2.0.1
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # To add assets (e.g., images) to your application, add an assets section,
+  # like this:
+  assets:
+    - assets/images/
+    - assets/sounds/
+
+  # Fonts can be included if needed
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+
+  # For adding custom colors or themes
+  uses-material-design: true
